@@ -1,0 +1,894 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		006AB3CB42EEB8992FB9D74F /* Pods_OpenCVFaceRecognitioniOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB6091B8B894E9D1B38E282 /* Pods_OpenCVFaceRecognitioniOS.framework */; };
+		D9813A112369023400AF82F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813A102369023400AF82F5 /* AppDelegate.m */; };
+		D9813A142369023400AF82F5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813A132369023400AF82F5 /* SceneDelegate.m */; };
+		D9813A172369023400AF82F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813A162369023400AF82F5 /* ViewController.m */; };
+		D9813A1A2369023400AF82F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9813A182369023400AF82F5 /* Main.storyboard */; };
+		D9813A1C2369023700AF82F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9813A1B2369023700AF82F5 /* Assets.xcassets */; };
+		D9813A1F2369023700AF82F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9813A1D2369023700AF82F5 /* LaunchScreen.storyboard */; };
+		D9813A222369023700AF82F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813A212369023700AF82F5 /* main.m */; };
+		D9813A2C2369023800AF82F5 /* OpenCVFaceRecognitioniOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813A2B2369023800AF82F5 /* OpenCVFaceRecognitioniOSTests.m */; };
+		D9813A372369023800AF82F5 /* OpenCVFaceRecognitioniOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813A362369023800AF82F5 /* OpenCVFaceRecognitioniOSUITests.m */; };
+		D9813A81236904EB00AF82F5 /* colorization_release_v2.caffemodel in Resources */ = {isa = PBXBuildFile; fileRef = D9813A45236904E800AF82F5 /* colorization_release_v2.caffemodel */; };
+		D9813A82236904EB00AF82F5 /* face_recognition_nocomment.py in Resources */ = {isa = PBXBuildFile; fileRef = D9813A46236904E800AF82F5 /* face_recognition_nocomment.py */; };
+		D9813A83236904EB00AF82F5 /* haarcascade_upperbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = D9813A47236904E800AF82F5 /* haarcascade_upperbody.xml */; };
+		D9813A84236904EB00AF82F5 /* haarcascade_frontalcatface_extended.xml in Resources */ = {isa = PBXBuildFile; fileRef = D9813A48236904E800AF82F5 /* haarcascade_frontalcatface_extended.xml */; };
+		D9813A85236904EB00AF82F5 /* haarcascade_profileface.xml in Resources */ = {isa = PBXBuildFile; fileRef = D9813A49236904E800AF82F5 /* haarcascade_profileface.xml */; };
+		D9813A86236904EB00AF82F5 /* global_model.caffemodel in Resources */ = {isa = PBXBuildFile; fileRef = D9813A4A236904E800AF82F5 /* global_model.caffemodel */; };
+		D9813A87236904EB00AF82F5 /* haarcascade_frontalcatface.xml in Resources */ = {isa = PBXBuildFile; fileRef = D9813A4B236904E800AF82F5 /* haarcascade_frontalcatface.xml */; };
+		D9813A89236904EB00AF82F5 /* haarcascade_eye.xml in Resources */ = {isa = PBXBuildFile; fileRef = D9813A4D236904E800AF82F5 /* haarcascade_eye.xml */; };
+		D9813A8A236904EB00AF82F5 /* face_recognition_commented.py in Resources */ = {isa = PBXBuildFile; fileRef = D9813A4E236904E800AF82F5 /* face_recognition_commented.py */; };
+		D9813A8B236904EB00AF82F5 /* haarcascade_lefteye_2splits.xml in Resources */ = {isa = PBXBuildFile; fileRef = D9813A4F236904E800AF82F5 /* haarcascade_lefteye_2splits.xml */; };
+		D9813A8C236904EB00AF82F5 /* haarcascade_frontalface_alt_tree.xml in Resources */ = {isa = PBXBuildFile; fileRef = D9813A50236904E800AF82F5 /* haarcascade_frontalface_alt_tree.xml */; };
+		D9813A8D236904EB00AF82F5 /* global_stats.prototxt in Resources */ = {isa = PBXBuildFile; fileRef = D9813A51236904E800AF82F5 /* global_stats.prototxt */; };
+		D9813A8E236904EB00AF82F5 /* haarcascade_licence_plate_rus_16stages.xml in Resources */ = {isa = PBXBuildFile; fileRef = D9813A52236904E800AF82F5 /* haarcascade_licence_plate_rus_16stages.xml */; };
+		D9813A8F236904EB00AF82F5 /* haarcascade_righteye_2splits.xml in Resources */ = {isa = PBXBuildFile; fileRef = D9813A53236904E800AF82F5 /* haarcascade_righteye_2splits.xml */; };
+		D9813A90236904EB00AF82F5 /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = D9813A54236904E800AF82F5 /* haarcascade_frontalface_alt.xml */; };
+		D9813A91236904EB00AF82F5 /* haarcascade_lowerbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = D9813A55236904E800AF82F5 /* haarcascade_lowerbody.xml */; };
+		D9813A92236904EB00AF82F5 /* haarcascade_russian_plate_number.xml in Resources */ = {isa = PBXBuildFile; fileRef = D9813A56236904E800AF82F5 /* haarcascade_russian_plate_number.xml */; };
+		D9813A93236904EB00AF82F5 /* haarcascade_frontalface_default.xml in Resources */ = {isa = PBXBuildFile; fileRef = D9813A57236904E800AF82F5 /* haarcascade_frontalface_default.xml */; };
+		D9813A94236904EB00AF82F5 /* haarcascade_smile.xml in Resources */ = {isa = PBXBuildFile; fileRef = D9813A58236904E800AF82F5 /* haarcascade_smile.xml */; };
+		D9813A95236904EB00AF82F5 /* colorization_release_v2_norebal.caffemodel in Resources */ = {isa = PBXBuildFile; fileRef = D9813A59236904E800AF82F5 /* colorization_release_v2_norebal.caffemodel */; };
+		D9813A96236904EB00AF82F5 /* colorization_deploy_v2.prototxt in Resources */ = {isa = PBXBuildFile; fileRef = D9813A5A236904E800AF82F5 /* colorization_deploy_v2.prototxt */; };
+		D9813A97236904EB00AF82F5 /* haarcascade_fullbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = D9813A5B236904E800AF82F5 /* haarcascade_fullbody.xml */; };
+		D9813A98236904EB00AF82F5 /* haarcascade_eye_tree_eyeglasses.xml in Resources */ = {isa = PBXBuildFile; fileRef = D9813A5C236904E800AF82F5 /* haarcascade_eye_tree_eyeglasses.xml */; };
+		D9813A99236904EB00AF82F5 /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = D9813A5E236904E800AF82F5 /* haarcascade_frontalface_alt2.xml */; };
+		D9813A9A236904EB00AF82F5 /* SessionLabelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813A5F236904E800AF82F5 /* SessionLabelVC.m */; };
+		D9813A9B236904EB00AF82F5 /* ELCAssetTablePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813A63236904E900AF82F5 /* ELCAssetTablePicker.m */; };
+		D9813A9C236904EB00AF82F5 /* ELCOverlayImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813A64236904E900AF82F5 /* ELCOverlayImageView.m */; };
+		D9813A9D236904EB00AF82F5 /* ELCImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813A65236904E900AF82F5 /* ELCImagePickerController.m */; };
+		D9813A9E236904EB00AF82F5 /* ELCAlbumPickerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9813A6D236904E900AF82F5 /* ELCAlbumPickerController.xib */; };
+		D9813A9F236904EB00AF82F5 /* ELCAssetPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9813A6E236904E900AF82F5 /* ELCAssetPicker.xib */; };
+		D9813AA0236904EB00AF82F5 /* Overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = D9813A6F236904E900AF82F5 /* Overlay.png */; };
+		D9813AA1236904EB00AF82F5 /* ELCAssetTablePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9813A70236904E900AF82F5 /* ELCAssetTablePicker.xib */; };
+		D9813AA2236904EB00AF82F5 /* Overlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9813A71236904E900AF82F5 /* Overlay@2x.png */; };
+		D9813AA3236904EB00AF82F5 /* ELCAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813A75236904E900AF82F5 /* ELCAssetCell.m */; };
+		D9813AA4236904EB00AF82F5 /* ELCConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813A77236904E900AF82F5 /* ELCConsole.m */; };
+		D9813AA5236904EB00AF82F5 /* ELCAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813A78236904E900AF82F5 /* ELCAsset.m */; };
+		D9813AA6236904EB00AF82F5 /* ELCAlbumPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813A79236904E900AF82F5 /* ELCAlbumPickerController.m */; };
+		D9813AA7236904EB00AF82F5 /* PersonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813A7A236904E900AF82F5 /* PersonCell.m */; };
+		D9813AA8236904EB00AF82F5 /* TrainingSessionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813A7B236904EA00AF82F5 /* TrainingSessionVC.m */; };
+		D9813AA9236904EB00AF82F5 /* LibraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9813A7D236904EA00AF82F5 /* LibraryViewController.xib */; };
+		D9813AAA236904EB00AF82F5 /* LibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813A7F236904EA00AF82F5 /* LibraryViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9813A282369023800AF82F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9813A042369023400AF82F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9813A0B2369023400AF82F5;
+			remoteInfo = OpenCVFaceRecognitioniOS;
+		};
+		D9813A332369023800AF82F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9813A042369023400AF82F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9813A0B2369023400AF82F5;
+			remoteInfo = OpenCVFaceRecognitioniOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		41827990F08433B2DC091524 /* Pods-OpenCVFaceRecognitioniOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVFaceRecognitioniOS.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVFaceRecognitioniOS/Pods-OpenCVFaceRecognitioniOS.debug.xcconfig"; sourceTree = "<group>"; };
+		87854F439E66259796460CCA /* Pods-OpenCVFaceRecognitioniOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVFaceRecognitioniOS.release.xcconfig"; path = "Target Support Files/Pods-OpenCVFaceRecognitioniOS/Pods-OpenCVFaceRecognitioniOS.release.xcconfig"; sourceTree = "<group>"; };
+		9BB6091B8B894E9D1B38E282 /* Pods_OpenCVFaceRecognitioniOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenCVFaceRecognitioniOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9813A0C2369023400AF82F5 /* OpenCVFaceRecognitioniOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCVFaceRecognitioniOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9813A0F2369023400AF82F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D9813A102369023400AF82F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D9813A122369023400AF82F5 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		D9813A132369023400AF82F5 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		D9813A152369023400AF82F5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D9813A162369023400AF82F5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D9813A192369023400AF82F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9813A1B2369023700AF82F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9813A1E2369023700AF82F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D9813A202369023700AF82F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9813A212369023700AF82F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D9813A272369023800AF82F5 /* OpenCVFaceRecognitioniOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenCVFaceRecognitioniOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9813A2B2369023800AF82F5 /* OpenCVFaceRecognitioniOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVFaceRecognitioniOSTests.m; sourceTree = "<group>"; };
+		D9813A2D2369023800AF82F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9813A322369023800AF82F5 /* OpenCVFaceRecognitioniOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenCVFaceRecognitioniOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9813A362369023800AF82F5 /* OpenCVFaceRecognitioniOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVFaceRecognitioniOSUITests.m; sourceTree = "<group>"; };
+		D9813A382369023800AF82F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9813A45236904E800AF82F5 /* colorization_release_v2.caffemodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = colorization_release_v2.caffemodel; sourceTree = "<group>"; };
+		D9813A46236904E800AF82F5 /* face_recognition_nocomment.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = face_recognition_nocomment.py; sourceTree = "<group>"; };
+		D9813A47236904E800AF82F5 /* haarcascade_upperbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_upperbody.xml; sourceTree = "<group>"; };
+		D9813A48236904E800AF82F5 /* haarcascade_frontalcatface_extended.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalcatface_extended.xml; sourceTree = "<group>"; };
+		D9813A49236904E800AF82F5 /* haarcascade_profileface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_profileface.xml; sourceTree = "<group>"; };
+		D9813A4A236904E800AF82F5 /* global_model.caffemodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = global_model.caffemodel; sourceTree = "<group>"; };
+		D9813A4B236904E800AF82F5 /* haarcascade_frontalcatface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalcatface.xml; sourceTree = "<group>"; };
+		D9813A4C236904E800AF82F5 /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
+		D9813A4D236904E800AF82F5 /* haarcascade_eye.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_eye.xml; sourceTree = "<group>"; };
+		D9813A4E236904E800AF82F5 /* face_recognition_commented.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = face_recognition_commented.py; sourceTree = "<group>"; };
+		D9813A4F236904E800AF82F5 /* haarcascade_lefteye_2splits.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_lefteye_2splits.xml; sourceTree = "<group>"; };
+		D9813A50236904E800AF82F5 /* haarcascade_frontalface_alt_tree.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt_tree.xml; sourceTree = "<group>"; };
+		D9813A51236904E800AF82F5 /* global_stats.prototxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = global_stats.prototxt; sourceTree = "<group>"; };
+		D9813A52236904E800AF82F5 /* haarcascade_licence_plate_rus_16stages.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_licence_plate_rus_16stages.xml; sourceTree = "<group>"; };
+		D9813A53236904E800AF82F5 /* haarcascade_righteye_2splits.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_righteye_2splits.xml; sourceTree = "<group>"; };
+		D9813A54236904E800AF82F5 /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
+		D9813A55236904E800AF82F5 /* haarcascade_lowerbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_lowerbody.xml; sourceTree = "<group>"; };
+		D9813A56236904E800AF82F5 /* haarcascade_russian_plate_number.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_russian_plate_number.xml; sourceTree = "<group>"; };
+		D9813A57236904E800AF82F5 /* haarcascade_frontalface_default.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_default.xml; sourceTree = "<group>"; };
+		D9813A58236904E800AF82F5 /* haarcascade_smile.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_smile.xml; sourceTree = "<group>"; };
+		D9813A59236904E800AF82F5 /* colorization_release_v2_norebal.caffemodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = colorization_release_v2_norebal.caffemodel; sourceTree = "<group>"; };
+		D9813A5A236904E800AF82F5 /* colorization_deploy_v2.prototxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = colorization_deploy_v2.prototxt; sourceTree = "<group>"; };
+		D9813A5B236904E800AF82F5 /* haarcascade_fullbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_fullbody.xml; sourceTree = "<group>"; };
+		D9813A5C236904E800AF82F5 /* haarcascade_eye_tree_eyeglasses.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_eye_tree_eyeglasses.xml; sourceTree = "<group>"; };
+		D9813A5D236904E800AF82F5 /* SessionLabelVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionLabelVC.h; sourceTree = "<group>"; };
+		D9813A5E236904E800AF82F5 /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
+		D9813A5F236904E800AF82F5 /* SessionLabelVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionLabelVC.m; sourceTree = "<group>"; };
+		D9813A60236904E900AF82F5 /* TrainingSessionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainingSessionVC.h; sourceTree = "<group>"; };
+		D9813A63236904E900AF82F5 /* ELCAssetTablePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCAssetTablePicker.m; sourceTree = "<group>"; };
+		D9813A64236904E900AF82F5 /* ELCOverlayImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCOverlayImageView.m; sourceTree = "<group>"; };
+		D9813A65236904E900AF82F5 /* ELCImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCImagePickerController.m; sourceTree = "<group>"; };
+		D9813A66236904E900AF82F5 /* ELCConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCConsole.h; sourceTree = "<group>"; };
+		D9813A67236904E900AF82F5 /* ELCAssetPickerFilterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCAssetPickerFilterDelegate.h; sourceTree = "<group>"; };
+		D9813A68236904E900AF82F5 /* ELCImagePickerHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCImagePickerHeader.h; sourceTree = "<group>"; };
+		D9813A69236904E900AF82F5 /* ELCAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCAssetCell.h; sourceTree = "<group>"; };
+		D9813A6A236904E900AF82F5 /* ELCAlbumPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCAlbumPickerController.h; sourceTree = "<group>"; };
+		D9813A6B236904E900AF82F5 /* ELCAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCAsset.h; sourceTree = "<group>"; };
+		D9813A6D236904E900AF82F5 /* ELCAlbumPickerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ELCAlbumPickerController.xib; sourceTree = "<group>"; };
+		D9813A6E236904E900AF82F5 /* ELCAssetPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ELCAssetPicker.xib; sourceTree = "<group>"; };
+		D9813A6F236904E900AF82F5 /* Overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Overlay.png; sourceTree = "<group>"; };
+		D9813A70236904E900AF82F5 /* ELCAssetTablePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ELCAssetTablePicker.xib; sourceTree = "<group>"; };
+		D9813A71236904E900AF82F5 /* Overlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Overlay@2x.png"; sourceTree = "<group>"; };
+		D9813A72236904E900AF82F5 /* ELCImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCImagePickerController.h; sourceTree = "<group>"; };
+		D9813A73236904E900AF82F5 /* ELCOverlayImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCOverlayImageView.h; sourceTree = "<group>"; };
+		D9813A74236904E900AF82F5 /* ELCAssetTablePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCAssetTablePicker.h; sourceTree = "<group>"; };
+		D9813A75236904E900AF82F5 /* ELCAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCAssetCell.m; sourceTree = "<group>"; };
+		D9813A76236904E900AF82F5 /* ELCAssetSelectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCAssetSelectionDelegate.h; sourceTree = "<group>"; };
+		D9813A77236904E900AF82F5 /* ELCConsole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCConsole.m; sourceTree = "<group>"; };
+		D9813A78236904E900AF82F5 /* ELCAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCAsset.m; sourceTree = "<group>"; };
+		D9813A79236904E900AF82F5 /* ELCAlbumPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCAlbumPickerController.m; sourceTree = "<group>"; };
+		D9813A7A236904E900AF82F5 /* PersonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonCell.m; sourceTree = "<group>"; };
+		D9813A7B236904EA00AF82F5 /* TrainingSessionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainingSessionVC.m; sourceTree = "<group>"; };
+		D9813A7D236904EA00AF82F5 /* LibraryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LibraryViewController.xib; sourceTree = "<group>"; };
+		D9813A7E236904EA00AF82F5 /* LibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryViewController.h; sourceTree = "<group>"; };
+		D9813A7F236904EA00AF82F5 /* LibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryViewController.m; sourceTree = "<group>"; };
+		D9813A80236904EB00AF82F5 /* PersonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonCell.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9813A092369023400AF82F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006AB3CB42EEB8992FB9D74F /* Pods_OpenCVFaceRecognitioniOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9813A242369023800AF82F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9813A2F2369023800AF82F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A35B99FEC6481DAA03D8D6B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41827990F08433B2DC091524 /* Pods-OpenCVFaceRecognitioniOS.debug.xcconfig */,
+				87854F439E66259796460CCA /* Pods-OpenCVFaceRecognitioniOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D9813A032369023400AF82F5 = {
+			isa = PBXGroup;
+			children = (
+				D9813A0E2369023400AF82F5 /* OpenCVFaceRecognitioniOS */,
+				D9813A2A2369023800AF82F5 /* OpenCVFaceRecognitioniOSTests */,
+				D9813A352369023800AF82F5 /* OpenCVFaceRecognitioniOSUITests */,
+				D9813A0D2369023400AF82F5 /* Products */,
+				A35B99FEC6481DAA03D8D6B2 /* Pods */,
+				FE0C6EC7BF54C2C910007268 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D9813A0D2369023400AF82F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9813A0C2369023400AF82F5 /* OpenCVFaceRecognitioniOS.app */,
+				D9813A272369023800AF82F5 /* OpenCVFaceRecognitioniOSTests.xctest */,
+				D9813A322369023800AF82F5 /* OpenCVFaceRecognitioniOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9813A0E2369023400AF82F5 /* OpenCVFaceRecognitioniOS */ = {
+			isa = PBXGroup;
+			children = (
+				D9813A44236904E800AF82F5 /* cascade */,
+				D9813A5E236904E800AF82F5 /* haarcascade_frontalface_alt2.xml */,
+				D9813A7C236904EA00AF82F5 /* LibraryView */,
+				D9813A80236904EB00AF82F5 /* PersonCell.h */,
+				D9813A7A236904E900AF82F5 /* PersonCell.m */,
+				D9813A5D236904E800AF82F5 /* SessionLabelVC.h */,
+				D9813A5F236904E800AF82F5 /* SessionLabelVC.m */,
+				D9813A60236904E900AF82F5 /* TrainingSessionVC.h */,
+				D9813A7B236904EA00AF82F5 /* TrainingSessionVC.m */,
+				D9813A61236904E900AF82F5 /* Utilities */,
+				D9813A0F2369023400AF82F5 /* AppDelegate.h */,
+				D9813A102369023400AF82F5 /* AppDelegate.m */,
+				D9813A122369023400AF82F5 /* SceneDelegate.h */,
+				D9813A132369023400AF82F5 /* SceneDelegate.m */,
+				D9813A152369023400AF82F5 /* ViewController.h */,
+				D9813A162369023400AF82F5 /* ViewController.m */,
+				D9813A182369023400AF82F5 /* Main.storyboard */,
+				D9813A1B2369023700AF82F5 /* Assets.xcassets */,
+				D9813A1D2369023700AF82F5 /* LaunchScreen.storyboard */,
+				D9813A202369023700AF82F5 /* Info.plist */,
+				D9813A212369023700AF82F5 /* main.m */,
+			);
+			path = OpenCVFaceRecognitioniOS;
+			sourceTree = "<group>";
+		};
+		D9813A2A2369023800AF82F5 /* OpenCVFaceRecognitioniOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9813A2B2369023800AF82F5 /* OpenCVFaceRecognitioniOSTests.m */,
+				D9813A2D2369023800AF82F5 /* Info.plist */,
+			);
+			path = OpenCVFaceRecognitioniOSTests;
+			sourceTree = "<group>";
+		};
+		D9813A352369023800AF82F5 /* OpenCVFaceRecognitioniOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D9813A362369023800AF82F5 /* OpenCVFaceRecognitioniOSUITests.m */,
+				D9813A382369023800AF82F5 /* Info.plist */,
+			);
+			path = OpenCVFaceRecognitioniOSUITests;
+			sourceTree = "<group>";
+		};
+		D9813A44236904E800AF82F5 /* cascade */ = {
+			isa = PBXGroup;
+			children = (
+				D9813A45236904E800AF82F5 /* colorization_release_v2.caffemodel */,
+				D9813A46236904E800AF82F5 /* face_recognition_nocomment.py */,
+				D9813A47236904E800AF82F5 /* haarcascade_upperbody.xml */,
+				D9813A48236904E800AF82F5 /* haarcascade_frontalcatface_extended.xml */,
+				D9813A49236904E800AF82F5 /* haarcascade_profileface.xml */,
+				D9813A4A236904E800AF82F5 /* global_model.caffemodel */,
+				D9813A4B236904E800AF82F5 /* haarcascade_frontalcatface.xml */,
+				D9813A4C236904E800AF82F5 /* haarcascade_frontalface_alt2.xml */,
+				D9813A4D236904E800AF82F5 /* haarcascade_eye.xml */,
+				D9813A4E236904E800AF82F5 /* face_recognition_commented.py */,
+				D9813A4F236904E800AF82F5 /* haarcascade_lefteye_2splits.xml */,
+				D9813A50236904E800AF82F5 /* haarcascade_frontalface_alt_tree.xml */,
+				D9813A51236904E800AF82F5 /* global_stats.prototxt */,
+				D9813A52236904E800AF82F5 /* haarcascade_licence_plate_rus_16stages.xml */,
+				D9813A53236904E800AF82F5 /* haarcascade_righteye_2splits.xml */,
+				D9813A54236904E800AF82F5 /* haarcascade_frontalface_alt.xml */,
+				D9813A55236904E800AF82F5 /* haarcascade_lowerbody.xml */,
+				D9813A56236904E800AF82F5 /* haarcascade_russian_plate_number.xml */,
+				D9813A57236904E800AF82F5 /* haarcascade_frontalface_default.xml */,
+				D9813A58236904E800AF82F5 /* haarcascade_smile.xml */,
+				D9813A59236904E800AF82F5 /* colorization_release_v2_norebal.caffemodel */,
+				D9813A5A236904E800AF82F5 /* colorization_deploy_v2.prototxt */,
+				D9813A5B236904E800AF82F5 /* haarcascade_fullbody.xml */,
+				D9813A5C236904E800AF82F5 /* haarcascade_eye_tree_eyeglasses.xml */,
+			);
+			path = cascade;
+			sourceTree = "<group>";
+		};
+		D9813A61236904E900AF82F5 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D9813A62236904E900AF82F5 /* ELCImagePicker */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D9813A62236904E900AF82F5 /* ELCImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				D9813A63236904E900AF82F5 /* ELCAssetTablePicker.m */,
+				D9813A64236904E900AF82F5 /* ELCOverlayImageView.m */,
+				D9813A65236904E900AF82F5 /* ELCImagePickerController.m */,
+				D9813A66236904E900AF82F5 /* ELCConsole.h */,
+				D9813A67236904E900AF82F5 /* ELCAssetPickerFilterDelegate.h */,
+				D9813A68236904E900AF82F5 /* ELCImagePickerHeader.h */,
+				D9813A69236904E900AF82F5 /* ELCAssetCell.h */,
+				D9813A6A236904E900AF82F5 /* ELCAlbumPickerController.h */,
+				D9813A6B236904E900AF82F5 /* ELCAsset.h */,
+				D9813A6C236904E900AF82F5 /* Resources */,
+				D9813A72236904E900AF82F5 /* ELCImagePickerController.h */,
+				D9813A73236904E900AF82F5 /* ELCOverlayImageView.h */,
+				D9813A74236904E900AF82F5 /* ELCAssetTablePicker.h */,
+				D9813A75236904E900AF82F5 /* ELCAssetCell.m */,
+				D9813A76236904E900AF82F5 /* ELCAssetSelectionDelegate.h */,
+				D9813A77236904E900AF82F5 /* ELCConsole.m */,
+				D9813A78236904E900AF82F5 /* ELCAsset.m */,
+				D9813A79236904E900AF82F5 /* ELCAlbumPickerController.m */,
+			);
+			path = ELCImagePicker;
+			sourceTree = "<group>";
+		};
+		D9813A6C236904E900AF82F5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D9813A6D236904E900AF82F5 /* ELCAlbumPickerController.xib */,
+				D9813A6E236904E900AF82F5 /* ELCAssetPicker.xib */,
+				D9813A6F236904E900AF82F5 /* Overlay.png */,
+				D9813A70236904E900AF82F5 /* ELCAssetTablePicker.xib */,
+				D9813A71236904E900AF82F5 /* Overlay@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D9813A7C236904EA00AF82F5 /* LibraryView */ = {
+			isa = PBXGroup;
+			children = (
+				D9813A7D236904EA00AF82F5 /* LibraryViewController.xib */,
+				D9813A7E236904EA00AF82F5 /* LibraryViewController.h */,
+				D9813A7F236904EA00AF82F5 /* LibraryViewController.m */,
+			);
+			path = LibraryView;
+			sourceTree = "<group>";
+		};
+		FE0C6EC7BF54C2C910007268 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BB6091B8B894E9D1B38E282 /* Pods_OpenCVFaceRecognitioniOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9813A0B2369023400AF82F5 /* OpenCVFaceRecognitioniOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9813A3B2369023800AF82F5 /* Build configuration list for PBXNativeTarget "OpenCVFaceRecognitioniOS" */;
+			buildPhases = (
+				48DAECCD59473777252453B2 /* [CP] Check Pods Manifest.lock */,
+				D9813A082369023400AF82F5 /* Sources */,
+				D9813A092369023400AF82F5 /* Frameworks */,
+				D9813A0A2369023400AF82F5 /* Resources */,
+				51FA85F618CF292A67335EB9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenCVFaceRecognitioniOS;
+			productName = OpenCVFaceRecognitioniOS;
+			productReference = D9813A0C2369023400AF82F5 /* OpenCVFaceRecognitioniOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9813A262369023800AF82F5 /* OpenCVFaceRecognitioniOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9813A3E2369023800AF82F5 /* Build configuration list for PBXNativeTarget "OpenCVFaceRecognitioniOSTests" */;
+			buildPhases = (
+				D9813A232369023800AF82F5 /* Sources */,
+				D9813A242369023800AF82F5 /* Frameworks */,
+				D9813A252369023800AF82F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9813A292369023800AF82F5 /* PBXTargetDependency */,
+			);
+			name = OpenCVFaceRecognitioniOSTests;
+			productName = OpenCVFaceRecognitioniOSTests;
+			productReference = D9813A272369023800AF82F5 /* OpenCVFaceRecognitioniOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D9813A312369023800AF82F5 /* OpenCVFaceRecognitioniOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9813A412369023800AF82F5 /* Build configuration list for PBXNativeTarget "OpenCVFaceRecognitioniOSUITests" */;
+			buildPhases = (
+				D9813A2E2369023800AF82F5 /* Sources */,
+				D9813A2F2369023800AF82F5 /* Frameworks */,
+				D9813A302369023800AF82F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9813A342369023800AF82F5 /* PBXTargetDependency */,
+			);
+			name = OpenCVFaceRecognitioniOSUITests;
+			productName = OpenCVFaceRecognitioniOSUITests;
+			productReference = D9813A322369023800AF82F5 /* OpenCVFaceRecognitioniOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9813A042369023400AF82F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Erkan SIRIN";
+				TargetAttributes = {
+					D9813A0B2369023400AF82F5 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					D9813A262369023800AF82F5 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = D9813A0B2369023400AF82F5;
+					};
+					D9813A312369023800AF82F5 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = D9813A0B2369023400AF82F5;
+					};
+				};
+			};
+			buildConfigurationList = D9813A072369023400AF82F5 /* Build configuration list for PBXProject "OpenCVFaceRecognitioniOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9813A032369023400AF82F5;
+			productRefGroup = D9813A0D2369023400AF82F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9813A0B2369023400AF82F5 /* OpenCVFaceRecognitioniOS */,
+				D9813A262369023800AF82F5 /* OpenCVFaceRecognitioniOSTests */,
+				D9813A312369023800AF82F5 /* OpenCVFaceRecognitioniOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9813A0A2369023400AF82F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9813A84236904EB00AF82F5 /* haarcascade_frontalcatface_extended.xml in Resources */,
+				D9813A85236904EB00AF82F5 /* haarcascade_profileface.xml in Resources */,
+				D9813AA2236904EB00AF82F5 /* Overlay@2x.png in Resources */,
+				D9813AA1236904EB00AF82F5 /* ELCAssetTablePicker.xib in Resources */,
+				D9813A8E236904EB00AF82F5 /* haarcascade_licence_plate_rus_16stages.xml in Resources */,
+				D9813A86236904EB00AF82F5 /* global_model.caffemodel in Resources */,
+				D9813A95236904EB00AF82F5 /* colorization_release_v2_norebal.caffemodel in Resources */,
+				D9813AA0236904EB00AF82F5 /* Overlay.png in Resources */,
+				D9813A96236904EB00AF82F5 /* colorization_deploy_v2.prototxt in Resources */,
+				D9813A8C236904EB00AF82F5 /* haarcascade_frontalface_alt_tree.xml in Resources */,
+				D9813A1F2369023700AF82F5 /* LaunchScreen.storyboard in Resources */,
+				D9813A89236904EB00AF82F5 /* haarcascade_eye.xml in Resources */,
+				D9813A9F236904EB00AF82F5 /* ELCAssetPicker.xib in Resources */,
+				D9813A97236904EB00AF82F5 /* haarcascade_fullbody.xml in Resources */,
+				D9813AA9236904EB00AF82F5 /* LibraryViewController.xib in Resources */,
+				D9813A90236904EB00AF82F5 /* haarcascade_frontalface_alt.xml in Resources */,
+				D9813A8D236904EB00AF82F5 /* global_stats.prototxt in Resources */,
+				D9813A8F236904EB00AF82F5 /* haarcascade_righteye_2splits.xml in Resources */,
+				D9813A94236904EB00AF82F5 /* haarcascade_smile.xml in Resources */,
+				D9813A8B236904EB00AF82F5 /* haarcascade_lefteye_2splits.xml in Resources */,
+				D9813A83236904EB00AF82F5 /* haarcascade_upperbody.xml in Resources */,
+				D9813A1C2369023700AF82F5 /* Assets.xcassets in Resources */,
+				D9813A93236904EB00AF82F5 /* haarcascade_frontalface_default.xml in Resources */,
+				D9813A82236904EB00AF82F5 /* face_recognition_nocomment.py in Resources */,
+				D9813A87236904EB00AF82F5 /* haarcascade_frontalcatface.xml in Resources */,
+				D9813A81236904EB00AF82F5 /* colorization_release_v2.caffemodel in Resources */,
+				D9813A99236904EB00AF82F5 /* haarcascade_frontalface_alt2.xml in Resources */,
+				D9813A8A236904EB00AF82F5 /* face_recognition_commented.py in Resources */,
+				D9813A98236904EB00AF82F5 /* haarcascade_eye_tree_eyeglasses.xml in Resources */,
+				D9813A9E236904EB00AF82F5 /* ELCAlbumPickerController.xib in Resources */,
+				D9813A91236904EB00AF82F5 /* haarcascade_lowerbody.xml in Resources */,
+				D9813A1A2369023400AF82F5 /* Main.storyboard in Resources */,
+				D9813A92236904EB00AF82F5 /* haarcascade_russian_plate_number.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9813A252369023800AF82F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9813A302369023800AF82F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48DAECCD59473777252453B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVFaceRecognitioniOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51FA85F618CF292A67335EB9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVFaceRecognitioniOS/Pods-OpenCVFaceRecognitioniOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVFaceRecognitioniOS/Pods-OpenCVFaceRecognitioniOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenCVFaceRecognitioniOS/Pods-OpenCVFaceRecognitioniOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9813A082369023400AF82F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9813AAA236904EB00AF82F5 /* LibraryViewController.m in Sources */,
+				D9813A9A236904EB00AF82F5 /* SessionLabelVC.m in Sources */,
+				D9813A9C236904EB00AF82F5 /* ELCOverlayImageView.m in Sources */,
+				D9813A172369023400AF82F5 /* ViewController.m in Sources */,
+				D9813A112369023400AF82F5 /* AppDelegate.m in Sources */,
+				D9813AA5236904EB00AF82F5 /* ELCAsset.m in Sources */,
+				D9813AA8236904EB00AF82F5 /* TrainingSessionVC.m in Sources */,
+				D9813A222369023700AF82F5 /* main.m in Sources */,
+				D9813AA7236904EB00AF82F5 /* PersonCell.m in Sources */,
+				D9813A9B236904EB00AF82F5 /* ELCAssetTablePicker.m in Sources */,
+				D9813A9D236904EB00AF82F5 /* ELCImagePickerController.m in Sources */,
+				D9813AA6236904EB00AF82F5 /* ELCAlbumPickerController.m in Sources */,
+				D9813A142369023400AF82F5 /* SceneDelegate.m in Sources */,
+				D9813AA4236904EB00AF82F5 /* ELCConsole.m in Sources */,
+				D9813AA3236904EB00AF82F5 /* ELCAssetCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9813A232369023800AF82F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9813A2C2369023800AF82F5 /* OpenCVFaceRecognitioniOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9813A2E2369023800AF82F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9813A372369023800AF82F5 /* OpenCVFaceRecognitioniOSUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9813A292369023800AF82F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9813A0B2369023400AF82F5 /* OpenCVFaceRecognitioniOS */;
+			targetProxy = D9813A282369023800AF82F5 /* PBXContainerItemProxy */;
+		};
+		D9813A342369023800AF82F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9813A0B2369023400AF82F5 /* OpenCVFaceRecognitioniOS */;
+			targetProxy = D9813A332369023800AF82F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D9813A182369023400AF82F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9813A192369023400AF82F5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D9813A1D2369023700AF82F5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9813A1E2369023700AF82F5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9813A392369023800AF82F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D9813A3A2369023800AF82F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9813A3C2369023800AF82F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41827990F08433B2DC091524 /* Pods-OpenCVFaceRecognitioniOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3S6P2YEDXL;
+				INFOPLIST_FILE = OpenCVFaceRecognitioniOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thinkerfarm.OpenCVFaceRecognitioniOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9813A3D2369023800AF82F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87854F439E66259796460CCA /* Pods-OpenCVFaceRecognitioniOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3S6P2YEDXL;
+				INFOPLIST_FILE = OpenCVFaceRecognitioniOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thinkerfarm.OpenCVFaceRecognitioniOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D9813A3F2369023800AF82F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3S6P2YEDXL;
+				INFOPLIST_FILE = OpenCVFaceRecognitioniOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Erkan-Sirin.OpenCVFaceRecognitioniOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVFaceRecognitioniOS.app/OpenCVFaceRecognitioniOS";
+			};
+			name = Debug;
+		};
+		D9813A402369023800AF82F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3S6P2YEDXL;
+				INFOPLIST_FILE = OpenCVFaceRecognitioniOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Erkan-Sirin.OpenCVFaceRecognitioniOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVFaceRecognitioniOS.app/OpenCVFaceRecognitioniOS";
+			};
+			name = Release;
+		};
+		D9813A422369023800AF82F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3S6P2YEDXL;
+				INFOPLIST_FILE = OpenCVFaceRecognitioniOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Erkan-Sirin.OpenCVFaceRecognitioniOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenCVFaceRecognitioniOS;
+			};
+			name = Debug;
+		};
+		D9813A432369023800AF82F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3S6P2YEDXL;
+				INFOPLIST_FILE = OpenCVFaceRecognitioniOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Erkan-Sirin.OpenCVFaceRecognitioniOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenCVFaceRecognitioniOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9813A072369023400AF82F5 /* Build configuration list for PBXProject "OpenCVFaceRecognitioniOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9813A392369023800AF82F5 /* Debug */,
+				D9813A3A2369023800AF82F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9813A3B2369023800AF82F5 /* Build configuration list for PBXNativeTarget "OpenCVFaceRecognitioniOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9813A3C2369023800AF82F5 /* Debug */,
+				D9813A3D2369023800AF82F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9813A3E2369023800AF82F5 /* Build configuration list for PBXNativeTarget "OpenCVFaceRecognitioniOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9813A3F2369023800AF82F5 /* Debug */,
+				D9813A402369023800AF82F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9813A412369023800AF82F5 /* Build configuration list for PBXNativeTarget "OpenCVFaceRecognitioniOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9813A422369023800AF82F5 /* Debug */,
+				D9813A432369023800AF82F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9813A042369023400AF82F5 /* Project object */;
+}
